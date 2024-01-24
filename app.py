@@ -8,7 +8,7 @@ def send_slack_message(message: str):
     payload = '{"text": "%s"}' % message
 
     response = requests.post(
-        'https://hooks.slack.com/services/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',
+        'YOUR WEBHOOK URL',
         data=payload
     )
     print(response.text)
